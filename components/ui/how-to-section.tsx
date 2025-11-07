@@ -9,18 +9,18 @@ interface StepCard {
 const steps: StepCard[] = [
   {
     number: "01",
-    title: "Discovery & Strategy",
-    description: "We start by understanding your business goals, challenges, and opportunities. Our team analyzes your current processes to identify where AI can create the most impact.",
+    title: "We Discover",
+    description: "We go beyond surface-level understanding. We dissect your business, decode your industry, and identify every gap, strength, and untapped opportunity — with absolute clarity.",
   },
   {
     number: "02",
-    title: "Custom AI Development",
-    description: "We design and build intelligent solutions tailored to your specific needs. From automation to predictive analytics, every solution is crafted for maximum ROI.",
+    title: "We Design",
+    description: "We engineer custom-built solutions that give you the Unfair Advantage  — solutions that multiply profits, Aggressively slash costs, skyrocket productivity, and deliver experiences your customers can’t ignore.",
   },
   {
     number: "03",
-    title: "Deploy & Scale",
-    description: "We implement the solution seamlessly into your workflow and provide ongoing support. As your business grows, your AI systems scale with you.",
+    title: "You Dominate",
+    description: "This is where everything changes. With your unfair advantage in motion, you don’t just survive the competition — you crush it. You lead the market, set new benchmarks, and become the standard others chase.",
   },
 ];
 
@@ -31,7 +31,7 @@ export function HowToSection() {
         {/* Centered Title */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white">
-            How to Get Your Advantage
+            How to Get Your Unfair Advantage
           </h2>
         </div>
 

@@ -4,9 +4,11 @@ import { GoogleGeminiEffectDemo } from "@/components/ui/google-gemini-demo";
 import { StatsSection } from "@/components/ui/stats-section";
 import { AboutSection } from "@/components/ui/about-section";
 import { HowToSection } from "@/components/ui/how-to-section";
+import { AdvantagesSection } from "@/components/ui/advantages-section";
 import SolutionsTypesSection from "@/components/ui/solutions-types-section";
 import AsSeenOnSection from "@/components/ui/as-seen-on";
 import { LogoCloud } from "@/components/ui/logo-cloud-2";
+import { LogosCarousel } from "@/components/ui/logos-carousel";
 import { BackgroundPaths } from "@/components/ui/background-paths";
 import { StaggerTestimonials } from "@/components/ui/stagger-testimonials";
 import Footer4Col from "@/components/ui/footer-column";
@@ -28,12 +30,16 @@ export default function Page() {
             What Exactly We Can Do For You
           </h2>
           <p className="text-lg md:text-xl text-white/70 leading-relaxed">
-            Add your description text here. This section is perfectly centered with ample spacing. 
-            Replace this text with your actual content to describe your services, mission, or value proposition.
+          We Design Custom Tech & AI solutions for small & medium businesses — helping you cut costs, boost productivity, and grow faster than ever before.
           </p>
         </section>
+      </main>
 
-        {/* Animated Stats Section */}
+      {/* Advantages Section */}
+      <AdvantagesSection />
+
+      {/* Animated Stats Section */}
+      <main className="container mx-auto px-4 py-16 space-y-16">
         <StatsSection />
 
         {/* About Us Section */}
@@ -47,7 +53,7 @@ export default function Page() {
       <SolutionsTypesSection />
 
       {/* Logo Cloud - Companies We Collaborate With */}
-      <section className="w-full bg-black py-12 pb-0">
+      {/* <section className="w-full bg-black py-12 pb-0">
         <div className="w-full place-content-center px-4 py-16">
           <div className="relative mx-auto grid max-w-3xl">
             <h2 className="mb-6 text-center font-medium text-lg text-muted-foreground tracking-tight md:text-2xl">
@@ -58,7 +64,10 @@ export default function Page() {
             <LogoCloud />
           </div>
         </div>
-      </section>
+      </section> */}
+
+      {/* Animated Clients Carousel Section */}
+      <LogosCarousel heading="Trusted by Industry Leaders" />
 
       {/* Testimonials Section */}
       <section className="w-full py-16">
@@ -71,7 +80,7 @@ export default function Page() {
       </section>
 
       {/* Background Paths Section */}
-      <BackgroundPaths title="Your Vision Our Innovation" />
+      <BackgroundPaths title="Get Your Unfair Advantage" />
 
       {/* Footer Section */}
       <Footer4Col />

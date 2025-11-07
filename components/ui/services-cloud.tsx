@@ -51,8 +51,9 @@ export function ServicesCloud({ items, className }: ServicesCloudProps) {
           title={label}
           href="#"
           onClick={(e) => e.preventDefault()}
+          style={{ fontSize: '2.5rem' }}
           className={cn(
-            "select-none whitespace-nowrap rounded-full px-4 py-1.5 text-sm",
+            "select-none whitespace-nowrap rounded-full px-10 py-5",
             "bg-white/10 text-white hover:bg-white/20",
             "ring-1 ring-white/15 shadow-sm backdrop-blur",
           )}

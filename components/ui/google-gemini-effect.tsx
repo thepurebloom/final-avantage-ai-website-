@@ -31,7 +31,7 @@ export function GoogleGeminiEffect({
         className={cn(
           // push the text below the sticky header using the CSS var
           "relative z-10 mx-auto max-w-5xl text-center px-6",
-          "pt-[calc(var(--nav-h)+1.25rem)] md:pt-[calc(var(--nav-h)+2rem)]",
+          "pt-[calc(var(--nav-h)+1.25rem)] md:pt-[calc(var(--nav-h)+4rem)]",
           "min-h-[70vh] flex flex-col items-center justify-center",
           bottomSafeArea,
           contentClassName
@@ -48,7 +48,7 @@ export function GoogleGeminiEffect({
       </div>
 
       {/* WAVES / GEMINI LAYER (stays at bottom, behind text) */}
-      <div className="absolute inset-x-0 bottom-0 z-0 select-none pointer-events-none">
+      <div className="absolute inset-x-0 bottom-[-15%] z-0 select-none pointer-events-none">
         <svg
           width="1440"
           height="890"

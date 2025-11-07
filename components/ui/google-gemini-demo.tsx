@@ -49,15 +49,15 @@ export function GoogleGeminiEffectDemo() {
             pathLengthFourth,
             pathLengthFifth,
           ]}
-          // Keep your spacing so text never overlaps the waves
-          bottomSafeArea="pb-[26vh] md:pb-[32vh] lg:pb-[36vh]"
+          // Increased spacing (40% more) between text and waves
+          bottomSafeArea="pb-[36vh] md:pb-[45vh] lg:pb-[50vh]"
           contentClassName="md:mt-0"
         />
       </div>
 
       {/* Spacer creates the scroll distance that drives the animation.
          Increase/decrease to control how long the hero stays pinned. */}
-      <div className="h-[160vh]" />
+      <div className="h-[120vh]" />
     </section>
   );
 }

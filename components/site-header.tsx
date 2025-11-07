@@ -41,10 +41,10 @@ export function SiteHeader() {
                 "px-4 py-2 text-sm text-white/80"
               )}
             >
-              <li><Link href="/#home" className="hover:text-white">Home</Link></li>
-              <li><Link href="/#about" className="hover:text-white">About</Link></li>
+              <li><Link href="/" className="hover:text-white">Home</Link></li>
+              <li><Link href="/about" className="hover:text-white">About Us</Link></li>
+              <li><Link href="/contact" className="hover:text-white">Contact Us</Link></li>
               <li><Link href="/geminieffect" className="hover:text-white">Demo</Link></li>
-              <li><Link href="/#contact" className="hover:text-white">Contact</Link></li>
             </ul>
           </nav>
 
