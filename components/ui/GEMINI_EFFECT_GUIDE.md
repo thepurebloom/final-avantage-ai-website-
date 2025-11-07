@@ -266,3 +266,16 @@ const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
 
 **Scroll down and watch the magic happen! ✨**
 
+## Home Page Integration
+
+The home page now uses `GoogleGeminiEffectDemo` as the main hero.
+
+All Spline-based hero components were removed from `app/page.tsx`.
+
+The Gemini Effect is pinned at the top of the home page and stays in place until the scroll animation completes (160vh of scroll distance). After the animation finishes, the page continues to scroll normally into the features, gallery, and CTA sections.
+
+### Previous Hero Component (Deprecated)
+- The 3D Spline hero (`SplineSceneBasic`) has been removed from the home page
+- Spline components remain available for use on other pages if needed
+- Files marked as deprecated: `hero-spline-demo.tsx` and `spline.tsx`
+

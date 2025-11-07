@@ -1,3 +1,5 @@
+// NOTE: Not used on Home anymore. Gemini Effect replaced it.
+
 'use client';
 
 import { Suspense, lazy } from 'react';

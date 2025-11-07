@@ -32,11 +32,13 @@ export function GoogleGeminiEffectDemo() {
         <GoogleGeminiEffect
           title={
             <>
-              Giving Your Business
+              <span className="text-[1.9125rem] md:text-[3.1875rem]">
+                Giving Your Business
+              </span>
               <br />
-              An Unfair
-              <br />
-              Advantage of AI
+              <span className="text-[3.234375rem] md:text-[5.390625rem] font-bold">
+                UnfairAdvantage of AI
+              </span>
             </>
           }
           description="Scroll to see how our AI solutions come to life, transforming your business with cutting-edge technology."

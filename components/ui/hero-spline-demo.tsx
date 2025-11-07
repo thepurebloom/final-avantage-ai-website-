@@ -1,3 +1,5 @@
+// NOTE: Deprecated on Home. Gemini Effect is the main hero now.
+
 'use client';
 
 import { SplineScene } from "@/components/ui/spline";

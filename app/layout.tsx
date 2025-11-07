@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
+import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
   title: "Avantage AI",
@@ -14,8 +15,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className="min-h-dvh bg-black text-foreground antialiased"
         style={{ ['--nav-h' as any]: '76px' }}
       >
-        <SiteHeader />
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <SiteHeader />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
