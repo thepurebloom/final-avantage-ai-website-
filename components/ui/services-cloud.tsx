@@ -24,6 +24,7 @@ const cloudProps: Omit<ICloud, "children"> = {
     minSpeed: 0.015,
     tooltip: "native",
     activeCursor: "default",
+    textHeight: 25,
   },
 };
 
@@ -51,7 +52,6 @@ export function ServicesCloud({ items, className }: ServicesCloudProps) {
           title={label}
           href="#"
           onClick={(e) => e.preventDefault()}
-          style={{ fontSize: '2.5rem' }}
           className={cn(
             "select-none whitespace-nowrap rounded-full px-10 py-5",
             "bg-white/10 text-white hover:bg-white/20",

@@ -18,17 +18,15 @@ export function SiteHeader() {
         {/* 3-column grid keeps logo left and nav perfectly centered regardless of logo width */}
         <div className="mx-auto max-w-6xl h-full grid grid-cols-3 items-center px-4">
           {/* Left: Logo */}
-          <div className="justify-self-start flex items-center gap-2">
-            {/* Replace with your real logo */}
-            <Link href="/" className="flex items-center gap-2">
+          <div className="justify-self-start flex items-center">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/logo.png"
                 alt="Avantage AI"
-                width={32}
-                height={32}
-                className="size-8 object-contain"
+                width={120}
+                height={120}
+                className="h-20 w-auto object-contain"
               />
-              <span className="text-white/90 font-semibold tracking-wide">Avantage AI</span>
             </Link>
           </div>
 
