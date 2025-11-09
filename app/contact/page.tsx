@@ -62,7 +62,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold mb-1">Phone</h3>
-                  <p className="text-white/70">+1 (555) 123-4567</p>
+                  <p className="text-white/70">+919270856871</p>
                 </div>
               </div>
 
@@ -75,7 +75,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold mb-1">Location</h3>
-                  <p className="text-white/70">San Francisco, CA</p>
+                  <p className="text-white/70">Sumit Apartments, 493, Professor&apos;s Colony, Hanuman Nagar, Nagpur, Maharashtra 440024/</p>
                 </div>
               </div>
             </div>
