@@ -10,7 +10,7 @@ export function AboutSection() {
           {/* Left Side - Image */}
           <div className="relative h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden group">
             <Image
-              src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80"
+              src="/about/about.jpg"
               alt="About Avantage AI"
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"

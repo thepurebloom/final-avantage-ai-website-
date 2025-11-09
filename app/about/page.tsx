@@ -115,7 +115,7 @@ export default function AboutPage() {
             <div className="relative w-full aspect-square max-w-md mx-auto overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-purple-950/50 to-pink-950/50">
               <Image
                 src="/founders/meer.jpg"
-                alt="Meer Sheik - Technology Architect & AI Expert"
+                alt="Meer Sheikh - Technology Architect & AI Expert"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -123,13 +123,13 @@ export default function AboutPage() {
             </div>
             <div className="space-y-4">
               <h3 className="text-2xl md:text-3xl font-bold text-white">
-                Meer Sheik
+                Meer Sheikh
               </h3>
               <p className="text-xl text-purple-400 font-semibold">
                 Technology Architect & AI Expert
               </p>
               <p className="text-lg text-white/80 leading-relaxed">
-                A mastermind behind intelligent automation, Meer Sheik transforms complex ideas into seamless, scalable systems. 
+                A mastermind behind intelligent automation, Meer Sheikh transforms complex ideas into seamless, scalable systems. 
               </p>
               <p className="text-lg text-white/80 leading-relaxed">
                 With expertise in AI architecture, automation, and software design, he ensures every Avantage AI solution is built for performance, reliability, and long-term innovation.
