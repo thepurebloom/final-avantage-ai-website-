@@ -6,7 +6,6 @@ import { AboutSection } from "@/components/ui/about-section";
 import { HowToSection } from "@/components/ui/how-to-section";
 import { AdvantagesSection } from "@/components/ui/advantages-section";
 import SolutionsTypesSection from "@/components/ui/solutions-types-section";
-import AsSeenOnSection from "@/components/ui/as-seen-on";
 import { LogoCloud } from "@/components/ui/logo-cloud-2";
 import { LogosCarousel } from "@/components/ui/logos-carousel";
 import { BackgroundPaths } from "@/components/ui/background-paths";
@@ -17,10 +16,8 @@ export default function Page() {
   return (
     <>
       {/* HERO: Google Gemini Effect (pinned until animation completes) */}
+      {/* Note: AsSeenOnSection is now integrated inside GoogleGeminiEffectDemo */}
       <GoogleGeminiEffectDemo />
-
-      {/* As Seen On - Media Logos */}
-      <AsSeenOnSection />
 
       {/* ====== Build the rest of the site below ====== */}
       <main className="container mx-auto px-4 py-16 space-y-16">

@@ -1,7 +1,6 @@
 import {
-  Dribbble,
   Facebook,
-  Github,
+  Youtube,
   Instagram,
   Mail,
   MapPin,
@@ -14,32 +13,20 @@ import Link from 'next/link';
 
 const data = {
   facebookLink: 'https://facebook.com/avantageai',
-  instaLink: 'https://instagram.com/avantageai',
-  twitterLink: 'https://twitter.com/avantageai',
+  instaLink: 'https://www.instagram.com/avantage_ai',
+  twitterLink: 'https://x.com/AiAvantage',
   linkedinLink: 'https://linkedin.com/company/avantageai',
-  githubLink: 'https://github.com/avantageai',
-  dribbbleLink: 'https://dribbble.com/avantageai',
+  youtubeLink: 'https://www.youtube.com/@AvantageAI',
   services: {
     aiConsulting: '/ai-consulting',
     mlSolutions: '/ml-solutions',
     automation: '/automation',
     dataAnalytics: '/data-analytics',
   },
-  about: {
-    company: '/about',
-    team: '/team',
-    careers: '/careers',
-    blog: '/blog',
-  },
-  help: {
-    faqs: '/faqs',
-    support: '/support',
-    documentation: '/docs',
-  },
   contact: {
-    email: 'hello@avantageai.com',
-    phone: '+1 (555) 123-4567',
-    address: 'San Francisco, CA, USA',
+    email: 'contact@avantageai.com',
+    phone: '+919270856871',
+    address: "Sumit Apartments, 493, Professor&apos;s Colony, Hanuman Nagar, Nagpur, Maharashtra 440024",
   },
   company: {
     name: 'Avantage AI',
@@ -54,14 +41,7 @@ const socialLinks = [
   { icon: Twitter, label: 'Twitter', href: data.twitterLink },
   { icon: Facebook, label: 'Facebook', href: data.facebookLink },
   { icon: Instagram, label: 'Instagram', href: data.instaLink },
-  { icon: Github, label: 'GitHub', href: data.githubLink },
-];
-
-const aboutLinks = [
-  { text: 'About Company', href: data.about.company },
-  { text: 'Our Team', href: data.about.team },
-  { text: 'Careers', href: data.about.careers },
-  { text: 'Blog', href: data.about.blog },
+  { icon: Youtube, label: 'YouTube', href: data.youtubeLink },
 ];
 
 const serviceLinks = [
@@ -69,12 +49,6 @@ const serviceLinks = [
   { text: 'ML Solutions', href: data.services.mlSolutions },
   { text: 'Automation', href: data.services.automation },
   { text: 'Data Analytics', href: data.services.dataAnalytics },
-];
-
-const helpfulLinks = [
-  { text: 'FAQs', href: data.help.faqs },
-  { text: 'Support', href: data.help.support },
-  { text: 'Documentation', href: data.help.documentation },
 ];
 
 const contactInfo = [
@@ -149,23 +123,7 @@ export default function Footer4Col() {
             </ul>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
-            <div className="text-center sm:text-left">
-              <p className="text-lg font-medium">About Us</p>
-              <ul className="mt-8 space-y-4 text-sm">
-                {aboutLinks.map(({ text, href }) => (
-                  <li key={text}>
-                    <a
-                      className="text-secondary-foreground/70 hover:text-secondary-foreground transition"
-                      href={href}
-                    >
-                      {text}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2">
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium">Our Services</p>
               <ul className="mt-8 space-y-4 text-sm">
@@ -174,22 +132,6 @@ export default function Footer4Col() {
                     <a
                       className="text-secondary-foreground/70 hover:text-secondary-foreground transition"
                       href={href}
-                    >
-                      {text}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="text-center sm:text-left">
-              <p className="text-lg font-medium">Resources</p>
-              <ul className="mt-8 space-y-4 text-sm">
-                {helpfulLinks.map(({ text, href }) => (
-                  <li key={text}>
-                    <a
-                      href={href}
-                      className="text-secondary-foreground/70 hover:text-secondary-foreground transition"
                     >
                       {text}
                     </a>

@@ -48,7 +48,7 @@ export function GoogleGeminiEffect({
       </div>
 
       {/* WAVES / GEMINI LAYER (stays at bottom, behind text) */}
-      <div className="absolute inset-x-0 bottom-[-15%] z-0 select-none pointer-events-none">
+      <div className="absolute inset-x-0 bottom-[-5%] z-0 select-none pointer-events-none">
         <svg
           width="1440"
           height="890"

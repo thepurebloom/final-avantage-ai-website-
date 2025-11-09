@@ -3,6 +3,7 @@
 import { useScroll, useTransform, useSpring } from "framer-motion";
 import React from "react";
 import { GoogleGeminiEffect } from "@/components/ui/google-gemini-effect";
+import AsSeenOnSection from "@/components/ui/as-seen-on";
 
 export function GoogleGeminiEffectDemo() {
   const ref = React.useRef<HTMLDivElement | null>(null);
@@ -28,37 +29,44 @@ export function GoogleGeminiEffectDemo() {
     // SPACER_H controls how long the hero stays pinned while the animation plays.
     <section id="home" ref={ref} className="relative w-full bg-black">
       {/* Sticky pinned hero that fills the viewport */}
-      <div className="sticky top-0 h-screen overflow-hidden">
-        <GoogleGeminiEffect
-          title={
-            <>
-              <span className="text-[1.9125rem] md:text-[3.1875rem]">
-                Giving Your Business
-              </span>
-              <br />
-              <span className="text-[3.234375rem] md:text-[5.390625rem] font-bold">
-                UnfairAdvantage of AI
-              </span>
-            </>
-          }
-          description="Scroll to see how our AI solutions come to life, transforming your business with cutting-edge technology."
-          pathLengths={[
-            pathLengthFirst,
-            pathLengthSecond,
-            pathLengthThird,
-            pathLengthFourth,
-            pathLengthFifth,
-          ]}
-          // Increased spacing (40% more) between text and waves
-          bottomSafeArea="pb-[36vh] md:pb-[45vh] lg:pb-[50vh]"
-          contentClassName="md:mt-0"
-        />
+      <div className="sticky top-0 h-screen overflow-hidden flex flex-col">
+        {/* Main hero content - takes up most of the space */}
+        <div className="flex-1 min-h-0">
+          <GoogleGeminiEffect
+            title={
+              <>
+                <span className="text-[1.9125rem] md:text-[3.1875rem]">
+                  Giving Your Business
+                </span>
+                <br />
+                <span className="text-[3.234375rem] md:text-[5.390625rem] font-bold">
+                  Unfair Advantage of AI
+                </span>
+              </>
+            }
+            description="Scroll to see how our AI solutions come to life, transforming your business with cutting-edge technology."
+            pathLengths={[
+              pathLengthFirst,
+              pathLengthSecond,
+              pathLengthThird,
+              pathLengthFourth,
+              pathLengthFifth,
+            ]}
+            // Increased spacing (40% more) between text and waves
+            bottomSafeArea="pb-[36vh] md:pb-[45vh] lg:pb-[50vh]"
+            contentClassName="md:mt-0"
+          />
+        </div>
+
+        {/* As Seen On section - pinned at the bottom of hero */}
+        <div className="flex-shrink-0 relative z-20">
+          <AsSeenOnSection className="py-4 !bg-transparent" />
+        </div>
       </div>
 
       {/* Spacer creates the scroll distance that drives the animation.
          Increase/decrease to control how long the hero stays pinned. */}
-      <div className="h-[120vh]" />
+      <div className="h-[110vh]" />
     </section>
   );
 }
-

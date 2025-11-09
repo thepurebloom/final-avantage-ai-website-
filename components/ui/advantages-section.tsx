@@ -54,7 +54,7 @@ export function AdvantagesSection() {
     <div className="w-full py-8 bg-black">
       <div className="container mx-auto px-4">
         <div className="w-full max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {ADVANTAGES.map((advantage, index) => (
               <div key={index} className="flex flex-row gap-3 items-start group">
                 <div className="mt-2 shrink-0">

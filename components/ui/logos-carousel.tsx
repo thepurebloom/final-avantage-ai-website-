@@ -116,7 +116,7 @@ export function LogosCarousel({
                   key={logo.id}
                   className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/6"
                 >
-                  <div className="mx-10 flex shrink-0 items-center justify-center">
+                  <div className="mx-1 sm:mx-6 md:mx-8 lg:mx-10 flex shrink-0 items-center justify-center">
                     <div className="relative">
                       <Image
                         src={logo.image}

@@ -21,7 +21,7 @@ export function LogoCloud({ className, logos, ...props }: LogoCloudProps) {
           <img
             key={`logo-${logo.alt}`}
             alt={logo.alt}
-            className="pointer-events-none h-6 select-none md:h-7 dark:brightness-0 dark:invert"
+            className="pointer-events-none h-7 select-none md:h-[2.1rem] dark:brightness-0 dark:invert"
             height={logo.height || "auto"}
             loading="lazy"
             src={logo.src}
@@ -32,4 +32,5 @@ export function LogoCloud({ className, logos, ...props }: LogoCloudProps) {
     </div>
   );
 }
+
 
