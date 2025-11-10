@@ -45,22 +45,9 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   return (
     <>
-      {/* Hero Section with Featured Image */}
-      <article className="min-h-screen bg-black text-white">
-        <div className="relative w-full h-[50vh] md:h-[60vh]">
-          <LazyImage
-            src={blog.image}
-            fallback="https://placehold.co/1200x600?text=Blog+Image"
-            inView={true}
-            alt={blog.title}
-            ratio={16 / 9}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
-        </div>
-
-        {/* Blog Content */}
-        <div className="container mx-auto px-4 -mt-32 relative z-10">
+      {/* Blog Article */}
+      <article className="min-h-screen bg-black text-white pt-20">
+        <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             {/* Category Badge */}
             <div className="mb-4">
@@ -75,7 +62,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             </h1>
 
             {/* Meta Information */}
-            <div className="flex flex-wrap items-center gap-4 text-white/60 text-sm mb-12 pb-8 border-b border-white/10">
+            <div className="flex flex-wrap items-center gap-4 text-white/60 text-sm mb-8">
               <div className="flex items-center gap-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -96,6 +83,18 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 </svg>
                 <span>{blog.readTime}</span>
               </div>
+            </div>
+
+            {/* Featured Image */}
+            <div className="relative w-full h-[300px] md:h-[400px] mb-12 rounded-2xl overflow-hidden">
+              <LazyImage
+                src={blog.image}
+                fallback="https://placehold.co/1200x600?text=Blog+Image"
+                inView={true}
+                alt={blog.title}
+                ratio={16 / 9}
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Blog Content (Markdown-style) */}
