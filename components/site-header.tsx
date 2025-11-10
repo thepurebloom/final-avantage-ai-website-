@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
@@ -10,22 +10,53 @@ import { cn } from "@/lib/utils";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
+  { href: "/blogs", label: "Blogs" },
   { href: "/contact", label: "Contact Us" },
   { href: "/geminieffect", label: "Demo" },
 ];
 
 export function SiteHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const NAV_H = "76px";
+
+  useEffect(() => {
+    const controlNavbar = () => {
+      const currentScrollY = window.scrollY;
+      
+      // Show header when at the top
+      if (currentScrollY < 10) {
+        setIsVisible(true);
+      } 
+      // Hide when scrolling down, show when scrolling up
+      else if (currentScrollY > lastScrollY) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', controlNavbar);
+    
+    return () => {
+      window.removeEventListener('scroll', controlNavbar);
+    };
+  }, [lastScrollY]);
 
   return (
     <header
-      className="sticky top-0 z-50 bg-transparent"
+      className={cn(
+        "sticky top-0 z-50 bg-transparent transition-transform duration-300 ease-in-out",
+        !isVisible && "-translate-y-full"
+      )}
       style={{ ['--nav-h' as any]: NAV_H }}
       aria-label="Main"
     >
       <div className="h-[var(--nav-h)]">
-        <div className="mx-auto max-w-6xl h-full px-4">
+        <div className="mx-auto max-w-[86.4rem] h-full px-4">
           {/* Mobile Layout */}
           <div className="md:hidden h-full flex items-center justify-between">
             {/* Center: Logo */}
