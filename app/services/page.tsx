@@ -123,11 +123,11 @@ export default function ServicesPage() {
             
             <div className="space-y-4 text-lg md:text-xl text-white/70 leading-relaxed max-w-4xl mx-auto pt-6">
               <p>
-                At Avantage AI, we don't just build tech — <span className="text-white font-semibold">we engineer advantage.</span>
+                At Avantage AI, we don{'\''}t just build tech — <span className="text-white font-semibold">we engineer advantage.</span>
               </p>
               <p>
                 Every service we offer is designed to help you automate, scale, and dominate your industry.
-                Whether you want to reduce manual work, increase profits, or build something the world hasn't seen before — it all starts with a Discovery Call.
+                Whether you want to reduce manual work, increase profits, or build something the world hasn{'\''}t seen before — it all starts with a Discovery Call.
               </p>
             </div>
           </motion.div>
@@ -257,7 +257,7 @@ export default function ServicesPage() {
               Ready to Get Your Unfair Advantage?
             </h2>
             <p className="text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
-              Book a Discovery Call today and let's discuss how we can transform your business with intelligent automation and cutting-edge technology.
+              Book a Discovery Call today and let{'\''}s discuss how we can transform your business with intelligent automation and cutting-edge technology.
             </p>
             <div className="pt-4">
               <a href="/contact">

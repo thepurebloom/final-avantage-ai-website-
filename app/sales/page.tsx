@@ -69,7 +69,7 @@ export default function SalesPage() {
             variants={fadeInUp}
           >
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
-              Let's Build the{" "}
+              Let{'\''}s Build the{" "}
               <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                 Advantage
               </span>
@@ -118,7 +118,7 @@ export default function SalesPage() {
                 What We Do in the Discovery Call
               </h2>
               <p className="text-xl text-white/70 max-w-3xl mx-auto">
-                This isn't a sales call — it's a <span className="text-white font-semibold">strategy session</span> where we dive deep into your business and identify how technology and AI can give you an unfair advantage.
+                This isn{'\''}t a sales call — it{'\''}s a <span className="text-white font-semibold">strategy session</span> where we dive deep into your business and identify how technology and AI can give you an unfair advantage.
               </p>
             </div>
 
@@ -154,7 +154,7 @@ export default function SalesPage() {
                   No pressure. No pitch. Just clarity.
                 </p>
                 <p className="text-lg text-white/70 text-center">
-                  You'll leave the call with a <span className="text-white font-semibold">clear vision</span> of how technology can <span className="text-white font-semibold">transform your business operations.</span>
+                  You{'\''}ll leave the call with a <span className="text-white font-semibold">clear vision</span> of how technology can <span className="text-white font-semibold">transform your business operations.</span>
                 </p>
               </div>
             </div>
@@ -215,7 +215,7 @@ export default function SalesPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
             >
-              If that sounds like you — this call will <span className="text-white font-semibold">open your eyes</span> to what's possible.
+              If that sounds like you — this call will <span className="text-white font-semibold">open your eyes</span> to what{'\''}s possible.
             </motion.p>
           </motion.div>
         </div>
@@ -236,7 +236,7 @@ export default function SalesPage() {
                 Why Businesses Choose Avantage AI
               </h2>
               <p className="text-xl text-white/70 max-w-3xl mx-auto">
-                We don't just talk tech — we build <span className="text-white font-semibold">real results.</span>
+                We don{'\''}t just talk tech — we build <span className="text-white font-semibold">real results.</span>
               </p>
             </div>
 
@@ -264,10 +264,10 @@ export default function SalesPage() {
 
               <div className="pt-8 border-t border-white/10 text-center space-y-4">
                 <p className="text-xl text-white/90">
-                  When you work with us, you're not buying software —
+                  When you work with us, you{'\''}re not buying software —
                 </p>
                 <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                  you're building your advantage.
+                  you{'\''}re building your advantage.
                 </p>
               </div>
             </div>
@@ -290,11 +290,11 @@ export default function SalesPage() {
             </h2>
             
             <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-              It's time to see what your business can truly achieve with the right technology.
+              It{'\''}s time to see what your business can truly achieve with the right technology.
             </p>
 
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
-              Click below to schedule your <span className="text-white font-semibold">Discovery Call</span> — and let's explore how we can build your <span className="text-white font-semibold">Avantage.</span>
+              Click below to schedule your <span className="text-white font-semibold">Discovery Call</span> — and let{'\''}s explore how we can build your <span className="text-white font-semibold">Avantage.</span>
             </p>
 
             <motion.div
@@ -316,7 +316,7 @@ export default function SalesPage() {
                 Spots are limited because we work closely with only a few businesses at a time.
               </p>
               <p className="text-base text-white/80 mt-2 font-semibold">
-                Secure your session now — and let's create the systems that will power your next level of growth.
+                Secure your session now — and let{'\''}s create the systems that will power your next level of growth.
               </p>
             </div>
           </motion.div>
@@ -336,7 +336,7 @@ export default function SalesPage() {
               What Our Clients Say
             </h2>
             <p className="text-lg md:text-xl text-white/70 text-center mb-12 max-w-3xl mx-auto">
-              Don't just take our word for it — hear from businesses that transformed their operations with Avantage AI.
+              Don{'\''}t just take our word for it — hear from businesses that transformed their operations with Avantage AI.
             </p>
           </motion.div>
         </div>
