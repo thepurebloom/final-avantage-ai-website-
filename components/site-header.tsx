@@ -6,13 +6,14 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
+  { href: "/services", label: "Services" },
   { href: "/blogs", label: "Blogs" },
   { href: "/contact", label: "Contact Us" },
-  { href: "/geminieffect", label: "Demo" },
 ];
 
 export function SiteHeader() {
@@ -59,6 +60,19 @@ export function SiteHeader() {
         <div className="mx-auto max-w-[86.4rem] h-full px-4">
           {/* Mobile Layout */}
           <div className="md:hidden h-full flex items-center justify-between">
+            {/* Left: Hamburger Menu */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="p-2 text-white/80 hover:text-white relative z-50"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
+
             {/* Center: Logo */}
             <div className="absolute left-1/2 -translate-x-1/2">
               <Link href="/" className="flex items-center">
@@ -72,18 +86,15 @@ export function SiteHeader() {
               </Link>
             </div>
 
-            {/* Right: Hamburger Menu */}
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="ml-auto p-2 text-white/80 hover:text-white relative z-50"
-              aria-label="Toggle menu"
-            >
-              {mobileMenuOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
-            </button>
+            {/* Right: Book a Call Button */}
+            <div className="relative z-50">
+              <Link href="/sales" target="_blank" rel="noopener noreferrer">
+                <InteractiveHoverButton 
+                  text="Book Now"
+                  className="w-auto min-w-[110px] px-4 py-1.5 text-sm text-white border-white/20 hover:border-white/40"
+                />
+              </Link>
+            </div>
           </div>
 
           {/* Desktop Layout - 3-column grid */}
@@ -120,8 +131,15 @@ export function SiteHeader() {
               </ul>
             </nav>
 
-            {/* Right: empty */}
-            <div className="justify-self-end" />
+            {/* Right: CTA Button */}
+            <div className="justify-self-end">
+              <Link href="/sales" target="_blank" rel="noopener noreferrer">
+                <InteractiveHoverButton 
+                  text="Book a call Now"
+                  className="w-auto min-w-[194px] px-6 text-white border-white/20 hover:border-white/40"
+                />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -158,6 +176,21 @@ export function SiteHeader() {
                   </motion.li>
                 ))}
               </ul>
+              
+              {/* Mobile CTA Button */}
+              <motion.div
+                className="mt-8 px-4"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: navLinks.length * 0.1 }}
+              >
+                <Link href="/sales" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                  <InteractiveHoverButton 
+                    text="Book a call Now"
+                    className="w-full text-white border-white/20"
+                  />
+                </Link>
+              </motion.div>
             </nav>
           </motion.div>
         )}
