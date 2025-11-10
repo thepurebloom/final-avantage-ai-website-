@@ -26,7 +26,7 @@ const data = {
   contact: {
     email: 'contact@avantageai.com',
     phone: '+919270856871',
-    address: "Sumit Apartments, 493, Professor&apos;s Colony, Hanuman Nagar, Nagpur, Maharashtra 440024",
+    address: "Sumit Apartments, 493, Professor's Colony, Hanuman Nagar, Nagpur, Maharashtra 440024",
   },
   company: {
     name: 'Avantage AI',

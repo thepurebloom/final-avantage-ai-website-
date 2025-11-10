@@ -32,7 +32,7 @@ export function AboutSection() {
                 </p>
                 <p>
                   We combine the strategic clarity of business consulting with the power of
-                  cutting-edge AI technology, creating systems that don&apos;t just look smart — they
+                  cutting-edge AI technology, creating systems that don't just look smart — they
                   act smart.
                 </p>
                 <p>
@@ -41,7 +41,7 @@ export function AboutSection() {
                   works for you, not the other way around.
                 </p>
                 <p className="font-semibold text-white">
-                  At Avantage AI, innovation isn&apos;t a buzzword — it&apos;s the foundation of everything we
+                  At Avantage AI, innovation isn't a buzzword — it's the foundation of everything we
                   do.
                 </p>
               </div>

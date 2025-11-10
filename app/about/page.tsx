@@ -24,7 +24,7 @@ export default function AboutPage() {
             </h1>
             <div className="space-y-6 text-lg md:text-xl text-white/80 leading-relaxed">
               <p className="text-2xl md:text-3xl font-semibold text-white">
-                At Avantage AI, we don&apos;t just build technology — we build your business advantage.
+                At Avantage AI, we don't just build technology — we build your business advantage.
               </p>
               <p>
                 We design intelligent software, apps, automations, bots, and websites that empower businesses to reduce costs, boost profits, increase productivity, and scale effortlessly.
@@ -42,13 +42,13 @@ export default function AboutPage() {
           </h2>
           <div className="space-y-6 text-lg md:text-xl text-white/80 leading-relaxed">
             <p>
-              We combine the strategic clarity of business consulting with the power of cutting-edge AI and automation. The result is technology that doesn&apos;t just look smart — it thinks, acts, and evolves smartly with your business.
+              We combine the strategic clarity of business consulting with the power of cutting-edge AI and automation. The result is technology that doesn't just look smart — it thinks, acts, and evolves smartly with your business.
             </p>
             <p>
               From automating complex workflows to creating decision-making systems that drive growth, we build tools that work for you, not the other way around.
             </p>
             <p>
-              At Avantage AI, innovation isn&apos;t a buzzword — it&apos;s our foundation. Every product we create is guided by three principles:
+              At Avantage AI, innovation isn't a buzzword — it's our foundation. Every product we create is guided by three principles:
             </p>
             <div className="flex flex-col md:flex-row gap-6 md:gap-12 justify-center items-center py-8">
               <div className="text-center">
@@ -105,7 +105,7 @@ export default function AboutPage() {
                 At Avantage AI, he bridges the gap between business goals and technology, ensuring every solution directly impacts profitability, efficiency, and growth.
               </p>
               <p className="text-lg text-white/80 leading-relaxed">
-                Sumit&apos;s strategic foresight and deep understanding of business dynamics form the backbone of Avantage AI&apos;s client success stories.
+                Sumit's strategic foresight and deep understanding of business dynamics form the backbone of Avantage AI's client success stories.
               </p>
             </div>
           </div>
@@ -135,7 +135,7 @@ export default function AboutPage() {
                 With expertise in AI architecture, automation, and software design, he ensures every Avantage AI solution is built for performance, reliability, and long-term innovation.
               </p>
               <p className="text-lg text-white/80 leading-relaxed">
-                He doesn&apos;t just create tech — he engineers possibilities.
+                He doesn't just create tech — he engineers possibilities.
               </p>
             </div>
           </div>
@@ -196,7 +196,7 @@ export default function AboutPage() {
             Our Clients
           </h2>
           <p className="text-lg md:text-xl text-white/70 text-center max-w-4xl mx-auto leading-relaxed">
-            We&apos;ve had the privilege of partnering with forward-thinking brands across industries — from manufacturing and real estate to retail, healthcare, and finance.
+            We've had the privilege of partnering with forward-thinking brands across industries — from manufacturing and real estate to retail, healthcare, and finance.
           </p>
           <p className="text-lg md:text-xl text-white/70 text-center max-w-4xl mx-auto leading-relaxed mt-4">
             Each partnership begins with a single goal: to unlock hidden potential through the power of AI and automation.

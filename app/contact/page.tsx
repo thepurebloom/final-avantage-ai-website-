@@ -20,7 +20,7 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="text-xl md:text-2xl text-white/70 max-w-3xl mx-auto leading-relaxed">
-            Have a question or want to work together? We&apos;d love to hear from you.
+            Have a question or want to work together? We'd love to hear from you.
           </p>
         </div>
       </section>
@@ -32,11 +32,11 @@ export default function ContactPage() {
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Let&apos;s Start a Conversation
+                Let's Start a Conversation
               </h2>
               <p className="text-lg text-white/70 leading-relaxed">
-                Whether you&apos;re looking to transform your business with AI, have a question about our services, 
-                or just want to say hello, we&apos;re here to help.
+                Whether you're looking to transform your business with AI, have a question about our services, 
+                or just want to say hello, we're here to help.
               </p>
             </div>
 
@@ -75,7 +75,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold mb-1">Location</h3>
-                  <p className="text-white/70">Sumit Apartments, 493, Professor&apos;s Colony, Hanuman Nagar, Nagpur, Maharashtra 440024/</p>
+                  <p className="text-white/70">Sumit Apartments, 493, Professor's Colony, Hanuman Nagar, Nagpur, Maharashtra 440024/</p>
                 </div>
               </div>
             </div>

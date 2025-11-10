@@ -9,43 +9,43 @@ const SQRT_5000 = Math.sqrt(5000);
 const testimonials = [
   {
     tempId: 0,
-    testimonial: "Avantage AI completely transformed the way we handle our accounting and vendor payments. Earlier, managing payments and accounts across two companies used to be a nightmare. Now, everything runs on autopilot — reminders, reconciliations, and even payment scheduling. It&apos;s like having an accountant who never sleeps. I&apos;ve saved countless hours every week, and my team finally has time to focus on growing the business instead of chasing paperwork.",
+    testimonial: "Avantage AI completely transformed the way we handle our accounting and vendor payments. Earlier, managing payments and accounts across two companies used to be a nightmare. Now, everything runs on autopilot — reminders, reconciliations, and even payment scheduling. It's like having an accountant who never sleeps. I've saved countless hours every week, and my team finally has time to focus on growing the business instead of chasing paperwork.",
     by: "Ankush, Owner at Texas & Amrutlal",
     imgSrc: "/testimonials/client-1.jpg"
   },
   {
     tempId: 1,
-    testimonial: "Before working with Avantage AI, we had bookings coming from multiple sources — website, partners, and offline agents — and managing them manually was chaotic. The team built us a unified system that not only syncs all our bookings in one place but also provides deep customer insights. I can now see which sources perform best and where our marketing money actually brings returns. It&apos;s been a total game-changer for our operations.",
+    testimonial: "Before working with Avantage AI, we had bookings coming from multiple sources — website, partners, and offline agents — and managing them manually was chaotic. The team built us a unified system that not only syncs all our bookings in one place but also provides deep customer insights. I can now see which sources perform best and where our marketing money actually brings returns. It's been a total game-changer for our operations.",
     by: "Siraj, Owner at BTP Group",
     imgSrc: "/testimonials/client-2.jpg"
   },
   {
     tempId: 2,
-    testimonial: "Our production team was constantly struggling to track the progress of multiple orders and parts. Avantage AI built a custom production management system that brought complete clarity and organization to our process. Now every stage is tracked in real-time — from moulding to delivery. We&apos;ve reduced delays, improved communication, and the system has literally become the backbone of our factory operations.",
+    testimonial: "Our production team was constantly struggling to track the progress of multiple orders and parts. Avantage AI built a custom production management system that brought complete clarity and organization to our process. Now every stage is tracked in real-time — from moulding to delivery. We've reduced delays, improved communication, and the system has literally become the backbone of our factory operations.",
     by: "Shubham, Owner at VRC Plasto Mould",
     imgSrc: "/testimonials/client-3.jpg"
   },
   {
     tempId: 3,
-    testimonial: "Running a steel business means you&apos;re constantly needed everywhere — accounts, inventory, dispatch — and that used to tie me to my desk all day. Avantage AI built an ERP system that automates almost all of it. I can now monitor everything from my phone. I don&apos;t have to be physically present at the office for things to move. It&apos;s given me both time freedom and peace of mind — something every business owner dreams of.",
+    testimonial: "Running a steel business means you're constantly needed everywhere — accounts, inventory, dispatch — and that used to tie me to my desk all day. Avantage AI built an ERP system that automates almost all of it. I can now monitor everything from my phone. I don't have to be physically present at the office for things to move. It's given me both time freedom and peace of mind — something every business owner dreams of.",
     by: "Harshad, Owner at Harshad Steel",
     imgSrc: "/testimonials/client-4.jpg"
   },
   {
     tempId: 4,
-    testimonial: "We handle over 1,00,000 bookings every year, and managing leads, accounts, and clients was a massive headache. Avantage AI built us a complete CRM and accounting system that automated almost 70% of our work. What earlier required a full team of people is now handled effortlessly by the system. It&apos;s not just automation — it&apos;s intelligent automation that understands how our business actually works. Couldn&apos;t recommend them enough.",
+    testimonial: "We handle over 1,00,000 bookings every year, and managing leads, accounts, and clients was a massive headache. Avantage AI built us a complete CRM and accounting system that automated almost 70% of our work. What earlier required a full team of people is now handled effortlessly by the system. It's not just automation — it's intelligent automation that understands how our business actually works. Couldn't recommend them enough.",
     by: "Faizan, Owner at Tickat, Dubai",
     imgSrc: "/testimonials/client-5.jpg"
   },
   {
     tempId: 5,
-    testimonial: "As an interior brand, we used to get so many client inquiries daily that it became hard to handle each one personally. Avantage AI helped us set up a smart enquiry automation and a chatbot that assists clients in choosing designs based on their preferences. It feels personal yet fully automated. Our conversion rate has gone up and customers love the quick responses — it&apos;s like having a 24x7 design consultant online.",
+    testimonial: "As an interior brand, we used to get so many client inquiries daily that it became hard to handle each one personally. Avantage AI helped us set up a smart enquiry automation and a chatbot that assists clients in choosing designs based on their preferences. It feels personal yet fully automated. Our conversion rate has gone up and customers love the quick responses — it's like having a 24x7 design consultant online.",
     by: "Sadiya, Owner at Mazana Interiors",
     imgSrc: "/testimonials/client-6.jpg"
   },
   {
     tempId: 6,
-    testimonial: "Avantage AI designed our e-commerce store beautifully. It&apos;s fast, clean, and perfectly represents our brand online. What I loved most was how they combined great design with smart functionality — product management, order flow, and automation are all smooth. We&apos;ve seen a visible increase in both engagement and conversions after launching our new store.",
+    testimonial: "Avantage AI designed our e-commerce store beautifully. It's fast, clean, and perfectly represents our brand online. What I loved most was how they combined great design with smart functionality — product management, order flow, and automation are all smooth. We've seen a visible increase in both engagement and conversions after launching our new store.",
     by: "Mahek, Owner at Blossom & Bees",
     imgSrc: "/testimonials/client-7.jpg"
   },
