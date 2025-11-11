@@ -1,5 +1,4 @@
 import {
-  Facebook,
   Youtube,
   Instagram,
   Mail,
@@ -12,17 +11,10 @@ import {
 import Link from 'next/link';
 
 const data = {
-  facebookLink: 'https://facebook.com/avantageai',
   instaLink: 'https://www.instagram.com/avantage_ai',
   twitterLink: 'https://x.com/AiAvantage',
   linkedinLink: 'https://linkedin.com/company/avantageai',
   youtubeLink: 'https://www.youtube.com/@AvantageAI',
-  services: {
-    aiConsulting: '/ai-consulting',
-    mlSolutions: '/ml-solutions',
-    automation: '/automation',
-    dataAnalytics: '/data-analytics',
-  },
   contact: {
     email: 'contact@avantageai.com',
     phone: '+919270856871',
@@ -39,16 +31,16 @@ const data = {
 const socialLinks = [
   { icon: Linkedin, label: 'LinkedIn', href: data.linkedinLink },
   { icon: Twitter, label: 'Twitter', href: data.twitterLink },
-  { icon: Facebook, label: 'Facebook', href: data.facebookLink },
   { icon: Instagram, label: 'Instagram', href: data.instaLink },
   { icon: Youtube, label: 'YouTube', href: data.youtubeLink },
 ];
 
-const serviceLinks = [
-  { text: 'AI Consulting', href: data.services.aiConsulting },
-  { text: 'ML Solutions', href: data.services.mlSolutions },
-  { text: 'Automation', href: data.services.automation },
-  { text: 'Data Analytics', href: data.services.dataAnalytics },
+const navigationLinks = [
+  { text: 'Home', href: '/' },
+  { text: 'About Us', href: '/about' },
+  { text: 'Services', href: '/services' },
+  { text: 'Blogs', href: '/blogs' },
+  { text: 'Contact Us', href: '/contact' },
 ];
 
 const contactInfo = [
@@ -113,6 +105,8 @@ export default function Footer4Col() {
                 <li key={label}>
                   <Link
                     href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-primary hover:text-primary/80 transition"
                   >
                     <span className="sr-only">{label}</span>
@@ -125,16 +119,16 @@ export default function Footer4Col() {
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2">
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium">Our Services</p>
+              <p className="text-lg font-medium">Quick Links</p>
               <ul className="mt-8 space-y-4 text-sm">
-                {serviceLinks.map(({ text, href }) => (
+                {navigationLinks.map(({ text, href }) => (
                   <li key={text}>
-                    <a
+                    <Link
                       className="text-secondary-foreground/70 hover:text-secondary-foreground transition"
                       href={href}
                     >
                       {text}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

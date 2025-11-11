@@ -5,15 +5,68 @@ import { StatsSection } from "@/components/ui/stats-section";
 import { LogosCarousel } from "@/components/ui/logos-carousel";
 import { BackgroundPaths } from "@/components/ui/background-paths";
 import Footer4Col from "@/components/ui/footer-column";
+import Script from "next/script";
 
 export const metadata = {
-  title: "About Us - Avantage AI",
-  description: "Learn about Avantage AI, our founders, mission, and the impact we create for businesses worldwide.",
+  title: "About Avantage AI",
+  description: "At Avantage AI, we blend business strategy with cutting-edge AI technology to create websites, apps, automations, and bots that give businesses a real competitive edge. Discover how we turn ordinary operations into smart, scalable systems.",
+  alternates: {
+    canonical: '/about',
+  },
 };
 
 export default function AboutPage() {
   return (
     <>
+      {/* LocalBusiness Structured Data */}
+      <Script id="schema-localbusiness" type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Avantage AI",
+          "image": "https://www.avantageai.com/icon.png",
+          "url": "https://www.avantageai.com/about",
+          "description": "At Avantage AI, we blend business strategy with cutting-edge AI technology to create websites, apps, automations, and bots that give businesses a real competitive edge.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Sumit Apartments, 493, Professor's Colony, Hanuman Nagar",
+            "addressLocality": "Nagpur",
+            "addressRegion": "Maharashtra",
+            "postalCode": "440024",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "21.1458",
+            "longitude": "79.0882"
+          },
+          "telephone": "+919270856871",
+          "email": "contact@avantageai.com",
+          "priceRange": "$$",
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          "servesCuisine": null,
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Nagpur"
+            },
+            {
+              "@type": "City",
+              "name": "Pune"
+            },
+            {
+              "@type": "City",
+              "name": "Mumbai"
+            }
+          ]
+        })}
+      </Script>
+
       {/* Hero Section - About Avantage AI */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-blue-950/20 to-black" />

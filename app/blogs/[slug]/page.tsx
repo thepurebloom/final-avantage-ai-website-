@@ -3,6 +3,7 @@ import { getBlogBySlug, getRelatedBlogs, blogs } from '@/lib/blog-data';
 import { LazyImage } from '@/components/ui/lazy-image';
 import Link from 'next/link';
 import Footer4Col from '@/components/ui/footer-column';
+import Script from 'next/script';
 
 // Generate static params for all blog posts
 export async function generateStaticParams() {
@@ -25,6 +26,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${blog.title} - Avantage AI Blog`,
     description: blog.description,
+    alternates: {
+      canonical: `/blogs/${slug}`,
+    },
     openGraph: {
       title: blog.title,
       description: blog.description,
@@ -45,6 +49,38 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   return (
     <>
+      {/* BlogPosting Structured Data */}
+      <Script id="schema-blogposting" type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": blog.title,
+          "description": blog.description,
+          "image": blog.image,
+          "author": {
+            "@type": "Person",
+            "name": blog.author
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Avantage AI",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.avantageai.com/icon.png"
+            }
+          },
+          "datePublished": blog.createdAt,
+          "dateModified": blog.createdAt,
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://www.avantageai.com/blogs/${slug}`
+          },
+          "articleSection": blog.category,
+          "keywords": blog.category,
+          "url": `https://www.avantageai.com/blogs/${slug}`
+        })}
+      </Script>
+
       {/* Blog Article */}
       <article className="min-h-screen bg-black text-white pt-20">
         <div className="container mx-auto px-4">

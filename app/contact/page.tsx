@@ -7,6 +7,9 @@ import Footer4Col from "@/components/ui/footer-column";
 export const metadata = {
   title: "Contact Us - Avantage AI",
   description: "Get in touch with Avantage AI. We'd love to hear from you and discuss how we can help your business.",
+  alternates: {
+    canonical: '/contact',
+  },
 };
 
 export default function ContactPage() {

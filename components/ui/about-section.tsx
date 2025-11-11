@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export function AboutSection() {
   return (
@@ -49,9 +50,11 @@ export function AboutSection() {
 
             {/* Optional CTA Button */}
             <div className="pt-4">
-              <button className="px-8 py-3 bg-white text-black font-semibold rounded-full hover:bg-white/90 transition-colors">
-                Learn More
-              </button>
+              <Link href="/about">
+                <button className="px-8 py-3 bg-white text-black font-semibold rounded-full hover:bg-white/90 transition-colors">
+                  Learn More
+                </button>
+              </Link>
             </div>
           </div>
         </div>

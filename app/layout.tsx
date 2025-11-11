@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
+import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ThemeProvider } from "next-themes";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Avantage AI - Unfair Advantage in AI",
-  description: "Avantage AI creates AI-powered software, apps, bots, and websites to help small and medium businesses automate operations, reduce costs, and increase efficiency.",
-  keywords: "AI automation, business automation, custom software, AI-powered solutions, business efficiency, cost reduction",
+  title: "Avantage AI - Software & Web Development, AI Automation",
+  description: "Transform your business with Avantage AI — experts in AI automation, web development, software solutions, and intelligent systems that reduce costs, boost profits, and help your business scale effortlessly. Serving Nagpur, Pune & Mumbai.",
+  keywords: "AI automation, business automation, custom software, AI-powered solutions, business efficiency, cost reduction, web development, software development, Nagpur, Pune, Mumbai",
   authors: [{ name: "Avantage AI" }],
   creator: "Avantage AI",
   publisher: "Avantage AI",
@@ -21,8 +22,8 @@ export const metadata: Metadata = {
     shortcut: '/favicon.ico',
   },
   openGraph: {
-    title: "Avantage AI - Unfair Advantage in AI",
-    description: "Avantage AI creates AI-powered software, apps, bots, and websites to help small and medium businesses automate operations, reduce costs, and increase efficiency.",
+    title: "Avantage AI - Software & Web Development, AI Automation",
+    description: "Transform your business with Avantage AI — experts in AI automation, web development, software solutions, and intelligent systems that reduce costs, boost profits, and help your business scale effortlessly. Serving Nagpur, Pune & Mumbai.",
     url: 'https://www.avantageai.com',
     siteName: 'Avantage AI',
     locale: 'en_US',
@@ -30,8 +31,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Avantage AI - Unfair Advantage in AI",
-    description: "AI-powered software, apps, bots, and websites for business automation",
+    title: "Avantage AI - Software & Web Development, AI Automation",
+    description: "Transform your business with Avantage AI — experts in AI automation, web development, software solutions, and intelligent systems that reduce costs, boost profits, and help your business scale effortlessly.",
     creator: '@AvantageAI',
   },
   robots: {
@@ -71,8 +72,78 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
         </Script>
 
+        {/* Organization & Website Structured Data */}
+        <Script id="schema-organization" type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Avantage AI",
+            "url": "https://www.avantageai.com",
+            "logo": "https://www.avantageai.com/icon.png",
+            "description": "Transform your business with Avantage AI — experts in AI automation, web development, software solutions, and intelligent systems that reduce costs, boost profits, and help your business scale effortlessly.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Sumit Apartments, 493, Professor's Colony, Hanuman Nagar",
+              "addressLocality": "Nagpur",
+              "addressRegion": "Maharashtra",
+              "postalCode": "440024",
+              "addressCountry": "IN"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+919270856871",
+              "contactType": "customer service",
+              "email": "contact@avantageai.com",
+              "areaServed": ["IN"],
+              "availableLanguage": ["en", "hi"]
+            },
+            "sameAs": [
+              "https://twitter.com/AvantageAI"
+            ],
+            "areaServed": {
+              "@type": "GeoCircle",
+              "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "21.1458",
+                "longitude": "79.0882"
+              }
+            },
+            "founder": [
+              {
+                "@type": "Person",
+                "name": "Sumit Thakur",
+                "jobTitle": "Business Strategist & Advisor"
+              },
+              {
+                "@type": "Person",
+                "name": "Meer Sheikh",
+                "jobTitle": "Technology Architect & AI Expert"
+              }
+            ]
+          })}
+        </Script>
+
+        <Script id="schema-website" type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Avantage AI",
+            "url": "https://www.avantageai.com",
+            "description": "AI automation, web development, and software solutions for businesses",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.avantageai.com/blogs?search={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          })}
+        </Script>
+
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <SiteHeader />
+          <Breadcrumbs />
           {children}
         </ThemeProvider>
       </body>

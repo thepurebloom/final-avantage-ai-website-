@@ -11,6 +11,13 @@ import { LogosCarousel } from "@/components/ui/logos-carousel";
 import { BackgroundPaths } from "@/components/ui/background-paths";
 import { StaggerTestimonials } from "@/components/ui/stagger-testimonials";
 import Footer4Col from "@/components/ui/footer-column";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
+};
 
 export default function Page() {
   return (
