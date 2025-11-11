@@ -91,7 +91,7 @@ export default function SalesPage() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
             >
-              <a href="/contact">
+              <a href="https://calendly.com/contact-avantageai/30min" target="_blank" rel="noopener noreferrer">
                 <Button 
                   className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white px-10 py-7 text-xl font-bold rounded-xl shadow-2xl transition-all duration-300 hover:scale-105"
                 >
@@ -302,7 +302,7 @@ export default function SalesPage() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <a href="/contact">
+              <a href="https://calendly.com/contact-avantageai/30min" target="_blank" rel="noopener noreferrer">
                 <Button 
                   className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white px-12 py-8 text-xl font-bold rounded-2xl shadow-2xl transition-all duration-300"
                 >

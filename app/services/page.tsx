@@ -189,7 +189,7 @@ export default function ServicesPage() {
                       <p className="text-lg md:text-xl font-semibold text-white/90 italic">
                         {service.cta}
                       </p>
-                      <a href="/contact">
+                      <a href="https://calendly.com/contact-avantageai/30min" target="_blank" rel="noopener noreferrer">
                         <Button 
                           variant="ghost"
                           className="bg-white/10 hover:bg-white/20 text-white border border-white/20 hover:border-white/30 transition-all duration-300"
@@ -210,7 +210,7 @@ export default function ServicesPage() {
       <section className="w-full bg-black py-20">
         <div className="container mx-auto px-4">
           <motion.div 
-            className="max-w-4xl mx-auto text-center space-y-8"
+            className="max-w-6xl mx-auto text-center space-y-8"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -260,7 +260,7 @@ export default function ServicesPage() {
               Book a Discovery Call today and let{'\''}s discuss how we can transform your business with intelligent automation and cutting-edge technology.
             </p>
             <div className="pt-4">
-              <a href="/contact">
+              <a href="https://calendly.com/contact-avantageai/30min" target="_blank" rel="noopener noreferrer">
                 <Button 
                   className="bg-gradient-to-br from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg transition-all duration-300"
                 >
