@@ -35,3 +35,5 @@ To customize the carousel, edit `/components/ui/logos-carousel.tsx`:
 The logos will automatically appear in the animated carousel on your homepage below the "Companies We Collaborate With" section.
 
 
+
+

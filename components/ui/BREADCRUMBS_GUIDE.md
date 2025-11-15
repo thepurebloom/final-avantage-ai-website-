@@ -132,3 +132,5 @@ Possible improvements you could add:
 4. **Custom Icons**: Use different icons for different sections
 5. **Collapse on Mobile**: Show only last 2 breadcrumbs on very small screens
 
+
+

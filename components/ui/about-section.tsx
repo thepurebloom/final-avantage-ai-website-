@@ -52,7 +52,7 @@ export function AboutSection() {
             <div className="pt-4">
               <Link href="/about">
                 <button className="px-8 py-3 bg-white text-black font-semibold rounded-full hover:bg-white/90 transition-colors">
-                  Learn More
+                  About Us
                 </button>
               </Link>
             </div>

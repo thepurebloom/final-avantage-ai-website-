@@ -13,7 +13,7 @@ import Link from 'next/link';
 const data = {
   instaLink: 'https://www.instagram.com/avantage_ai',
   twitterLink: 'https://x.com/AiAvantage',
-  linkedinLink: 'https://linkedin.com/company/avantageai',
+  linkedinLink: 'https://www.linkedin.com/company/avantage-group-ai/?viewAsMember=true',
   youtubeLink: 'https://www.youtube.com/@AvantageAI',
   contact: {
     email: 'contact@avantageai.com',

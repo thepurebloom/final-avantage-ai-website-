@@ -13,6 +13,7 @@ export function ContactForm() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState<string>('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -27,13 +28,42 @@ export function ContactForm() {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
-    // Simulate form submission
     try {
-      // Replace this with your actual form submission logic
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      // Submit to Next.js API route
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      // Check if response is JSON before parsing
+      const contentType = response.headers.get('content-type');
+      let data;
       
-      console.log('Form submitted:', formData);
+      if (contentType && contentType.includes('application/json')) {
+        data = await response.json();
+      } else {
+        // If not JSON, it's likely an HTML error page
+        const text = await response.text();
+        console.error('Non-JSON response received:', text.substring(0, 200));
+        setErrorMessage('Server error: Received invalid response. Please check the server logs.');
+        setSubmitStatus('error');
+        return;
+      }
+
+      if (!response.ok) {
+        // Extract error message from API response
+        const errorMsg = data.error || 'Failed to send message';
+        setErrorMessage(errorMsg);
+        setSubmitStatus('error');
+        console.error('API Error:', errorMsg);
+        return;
+      }
+
       setSubmitStatus('success');
+      setErrorMessage('');
       
       // Reset form
       setFormData({
@@ -45,8 +75,9 @@ export function ContactForm() {
 
       // Reset success message after 5 seconds
       setTimeout(() => setSubmitStatus('idle'), 5000);
-    } catch (error) {
+    } catch (error: any) {
       console.error('Form submission error:', error);
+      setErrorMessage(error.message || 'Network error. Please check your connection and try again.');
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -182,9 +213,14 @@ export function ContactForm() {
 
         {submitStatus === 'error' && (
           <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/20">
-            <p className="text-red-400 text-sm text-center">
-              ✗ Something went wrong. Please try again or email us directly.
+            <p className="text-red-400 text-sm text-center mb-2">
+              ✗ {errorMessage || 'Something went wrong. Please try again or email us directly.'}
             </p>
+            {errorMessage && (
+              <p className="text-red-300/70 text-xs text-center">
+                Check the browser console and server logs for more details.
+              </p>
+            )}
           </div>
         )}
       </form>
