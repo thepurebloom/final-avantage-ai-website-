@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/site-header";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ThemeProvider } from "next-themes";
 import Script from "next/script";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Avantage AI - Software & Web Development, AI Automation",
@@ -146,6 +147,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Breadcrumbs />
           {children}
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
